@@ -12,7 +12,16 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src='main.js'></script>
 </head>
+<style>
+    .classification li {
+        transition: .4s;
+        cursor: pointer;
+    }
 
+    .classification li:hover {
+        color : gold;
+    }
+</style>
 <body>
     <div class="container">
         <header>
@@ -33,16 +42,20 @@
                                 <a class="nav-link" href="#">Thông tin</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Loại
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Loại
                                 </a>
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Trái cây</a></li>
-                                  <li><a class="dropdown-item" href="#">Nước đóng hộp</a></li>
+                                    <li><a class="dropdown-item" href="#">Trái cây</a></li>
+                                    <li><a class="dropdown-item" href="#">Nước đóng hộp</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Giỏ Hàng</a>
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
@@ -51,9 +64,68 @@
                         </form>
                     </div>
                 </div>
-                <button class="ms-4 btn btn-outline-warning"><i class="fa-solid fa-cart-shopping"></i></button>
             </nav>
         </header>
+        <div class="mt-4 container">
+            <div class="row">
+                <div class="col-md-3 mb-3 classification">
+                    <p class="h5 text-warning">Phân loại</p>
+                    <li class="list-unstyled fw-medium mb-1">Fresh fruits</li>
+                    <li class="list-unstyled fw-medium mb-1">Nước đóng hộp</li>
+                    <li class="list-unstyled fw-medium">khác</li>
+                </div>
+                <div class="col-md-9 d-flex justify-content-center align-content-center gap-5 flex-wrap product">
+                    <div class="col-3 d-flex flex-column justify-content-center align-content-center border border-dark-subtle gap-2 p-1">
+                        <img src="img/44f920810a271a3bdd789bf275c2cad_cc8529666234418993f4d483c9f9939f_large_27566d30a81e41a39de3b1718e3db29e_large.jpg">
+                        <div class="p-2">
+                            <p class="text-center mb-1 fw-bold h5">Chanh Dây</p>
+                            <p class="text-center">Giá : 20.000đ/kg</p>
+                            <button class="w-100 btn btn-warning fw-medium">Thêm giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-center align-content-center border border-dark-subtle gap-2 p-1">
+                        <img src="img/263357c23ba80c433204bcdc0cb2d19_056f2c250f0d4ab699b11e67dc809b48_large_8039c27a72364872bcf02c14e6e399a0_large.jpg">
+                        <div class="p-2">
+                            <p class="text-center mb-1 fw-bold h5">Bơ</p>
+                            <p class="text-center">Giá : 24.000đ/kg</p>
+                            <button class="w-100 btn btn-warning fw-medium">Thêm giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-center align-content-center border border-dark-subtle gap-2 p-1">
+                        <img src="img/b95c97425c61b58564941eb792ae995_2e37cd585c804482b657735df156c883_large_081baa580b4143efac82332c545a908e_large.jpg">
+                        <div class="p-2">
+                            <p class="text-center mb-1 fw-bold h5">Chuối Mỹ</p>
+                            <p class="text-center">Giá : 26.000đ/kg</p>
+                            <button class="w-100 btn btn-warning fw-medium">Thêm giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-center align-content-center border border-dark-subtle gap-2 p-1">
+                        <img src="img/mang_cau-01_1d61739d1af54074b5282027dab07938_large_9cc60bee4c814827974a127be7c0acba_large.png">
+                        <div class="p-2">
+                            <p class="text-center mb-1 fw-bold h5">Mãng Cầu Xiêm</p>
+                            <p class="text-center">Giá : 36.000đ/kg</p>
+                            <button class="w-100 btn btn-warning fw-medium">Thêm giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-center align-content-center border border-dark-subtle gap-2 p-1">
+                        <img src="img/thanh_long-01_c635795659f64d07a67a5900d47e2f7b_large_d464adf0306e40a6958bfea66ba9e46a_large.webp">
+                        <div class="p-2">
+                            <p class="text-center mb-1 fw-bold h5">Thanh Long</p>
+                            <p class="text-center">Giá : 22.000đ/kg</p>
+                            <button class="w-100 btn btn-warning fw-medium">Thêm giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-center align-content-center border border-dark-subtle gap-2 p-1">
+                        <img src="img/vai-01_86120ffcd18445389f3437d8a01a919d_large_0f41ea4e4be34510b3c645a7811ab671_large.jpg">
+                        <div class="p-2">
+                            <p class="text-center mb-1 fw-bold h5">Vải Thiều</p>
+                            <p class="text-center">Giá : 45.000đ/kg</p>
+                            <button class="w-100 btn btn-warning fw-medium">Thêm giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
