@@ -38,7 +38,7 @@
     .cart {
         width: 500px;
         transition: .4s;
-        max-width: 500px;
+        width: 500px;
     }
 
     .fa-x {
@@ -58,6 +58,12 @@
         padding: 6px 20px;
         font-size: 12px;
         border: none;
+    }
+
+    @media screen and (max-width: 1023px){
+        .cart {
+            width: 100%;
+        }
     }
 </style>
 
@@ -180,12 +186,12 @@
             </div>
         </main>
         <div class="position-fixed start-0 top-0 bg-secondary h-100 cart d-none">
-            <div class="w-100 h-100 p-4 overflow-x-auto">
-                <div class="d-flex justify-content-between align-content-center mb-3">
+            <div class="w-100 h-100 p-4">
+                <div class="d-flex justify-content-between align-content-center mb-3 position-relative">
                     <p class="fw-bold h4">Fresh <span class="text-warning">Fruits</span></p>
-                    <i class="fa-solid fa-x h3 fw-bold"></i>
+                    <i class="fa-solid fa-x h3 fw-bold position-absolute top-0 end-0"></i>
                 </div>
-                <div class="d-flex justify-content-start align-content-center gap-2 border-bottom pb-4 border-black pt-3 menu_cart">
+                <div class="d-flex justify-content-center align-items-start gap-2 border-bottom pb-4 border-black pt-3 menu_cart overflow-x-auto w-100">
                     <img class="img_cart" src="img/263357c23ba80c433204bcdc0cb2d19_056f2c250f0d4ab699b11e67dc809b48_large_8039c27a72364872bcf02c14e6e399a0_large.jpg" alt="">
                     <div>
                         <p class="fw-bold mb-1">Tên sản phẩm : <span class="name_product-cart">Bơ</span></p>
@@ -193,20 +199,8 @@
                         <p class="fw-bold mb-0">Số lượng : <input type="number" class="w-25" placeholder="1"></p>
                     </div>
                     <div class="d-flex flex-column gap-2 button_cart justify-content-center align-content-center">
-                        <button class="bg-warning">Mua Ngay</button>
-                        <button class="bg-danger">Delete</button>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-start align-content-center gap-2 border-bottom pb-4 border-black pt-3">
-                    <img class="img_cart" src="img/263357c23ba80c433204bcdc0cb2d19_056f2c250f0d4ab699b11e67dc809b48_large_8039c27a72364872bcf02c14e6e399a0_large.jpg" alt="">
-                    <div>
-                        <p class="fw-bold mb-1">Tên sản phẩm : <span class="name_product-cart">Bơ</span></p>
-                        <p class="fw-bold mb-0">Giá tiền : <span class="price_cart">24.000đ/kg</span></p>
-                        <p class="fw-bold mb-0">Số lượng : <input type="number" class="w-25" placeholder="1"></p>
-                    </div>
-                    <div class="d-flex flex-column gap-2 button_cart justify-content-center align-content-center">
-                        <button class="bg-warning">Mua Ngay</button>
-                        <button class="bg-danger">Delete</button>
+                        <button class="bg-warning">Mua</button>
+                        <button class="bg-danger">Xóa</button>
                     </div>
                 </div>
             </div>
