@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <style>
     .classification li {
@@ -37,6 +38,7 @@
     .cart {
         width: 500px;
         transition: .4s;
+        max-width: 500px;
     }
 
     .fa-x {
@@ -92,7 +94,7 @@
                                 <a class="nav-link" href="#">Đăng nhập</a>
                             </li>
                             <li class="nav-item add_cart">
-                                <a class="nav-link" href="#">Giỏ Hàng</a>
+                                <a class="nav-link add_cart" href="#">Giỏ Hàng</a>
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
@@ -105,6 +107,7 @@
         </header>
         <main>
             <div class="mt-4 container position-relative">
+                <div class="opacity d-none bg-black opacity-50 position-fixed w-100 h-100 top-0 end-0"></div>
                 <div class="row">
                     <div class="position-relative col-12 col-md-3 mb-3 classification">
                         <p class="h5 text-warning">Phân loại</p>
@@ -176,8 +179,8 @@
                 </div>
             </div>
         </main>
-        <div class="position-fixed start-0 top-0 bg-secondary h-100 cart">
-            <div class="w-100 h-100 position-relative p-4">
+        <div class="position-fixed start-0 top-0 bg-secondary h-100 cart d-none">
+            <div class="w-100 h-100 p-4 overflow-x-auto">
                 <div class="d-flex justify-content-between align-content-center mb-3">
                     <p class="fw-bold h4">Fresh <span class="text-warning">Fruits</span></p>
                     <i class="fa-solid fa-x h3 fw-bold"></i>
@@ -214,6 +217,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="fruits.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
