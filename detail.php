@@ -94,7 +94,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="login.html">Đăng nhập</a>
+                                <a class="nav-link" href="login.php">Đăng nhập</a>
                             </li>
                             <li class="nav-item add_cart">
                                 <a class="nav-link add_cart" href="#">Giỏ Hàng</a>

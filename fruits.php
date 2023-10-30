@@ -95,9 +95,6 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Thông tin</a>
-                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
@@ -109,7 +106,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="login.html">Đăng nhập</a>
+                                <a class="nav-link" href="login.php">Đăng nhập</a>
                             </li>
                             <li class="nav-item add_cart">
                                 <a class="nav-link add_cart" href="#">Giỏ Hàng</a>

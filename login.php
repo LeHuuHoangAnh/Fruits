@@ -51,7 +51,7 @@
             <button type="submit" class="btn btn-dark fw-bold mb-2 w-100">Submit</button>
             <div class="d-flex gap-1">
                 <p class="fw-bold">Don’t have an account yet?</p>
-                <a href="signup.html" class="text-decoration-none fw-bold text-success ">Sign Up</a>
+                <a href="signup.php" class="text-decoration-none fw-bold text-success ">Sign Up</a>
             </div>
           </form>
     </div>

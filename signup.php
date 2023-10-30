@@ -63,7 +63,7 @@
             <button type="submit" class="btn btn-dark fw-bold mb-2 w-100">Submit</button>
             <div class="d-flex gap-1">
                 <p class="fw-bold h6">If you have an account?</p>
-                <a href="login.html" class="text-decoration-none fw-bold text-success">Login</a>
+                <a href="login.php" class="text-decoration-none fw-bold text-success">Login</a>
             </div>
         </form>
     </div>

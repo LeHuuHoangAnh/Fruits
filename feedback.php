@@ -28,24 +28,24 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Sản phẩm</a>
+                                <a class="nav-link active" aria-current="page" href="admin.php">Sản phẩm</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="add_product.html">Thêm sản phẩm</a>
+                                <a class="nav-link" href="add_product.php">Thêm sản phẩm</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="status.html">Trạng thái sản phẩm</a>
+                                <a class="nav-link" href="status.php">Trạng thái đặt hàng</a>
                             </li>
                             <li class="nav-item add_cart">
-                                <a class="nav-link add_cart" href="add_product.html">Sửa sản phẩm</a>
+                                <a class="nav-link add_cart" href="add_product.php">Sửa sản phẩm</a>
                             </li>
                             <li class="nav-item add_cart">
-                                <a class="nav-link add_cart" href="feedback.html">Đánh giá</a>
+                                <a class="nav-link add_cart" href="feedback.php">Đánh giá</a>
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search ..." aria-label="Search">
-                            <button class="btn btn-outline-warning" type="submit">Search</button>
+                            <button class="btn btn-outline-warning fw-bold" type="submit">Search</button>
                         </form>
                     </div>
                 </div>
