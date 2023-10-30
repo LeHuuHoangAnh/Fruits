@@ -12,7 +12,26 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<style></style>
+<style>
+    .img_status {
+        width: 220px;
+    }
+
+    .cart_status {
+        width: 800px;
+    }
+
+    @media screen and (max-width: 1023px){
+        .img_status {
+            width: 100%;
+        }
+
+        .cart_status {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
+</style>
 
 <body class="position-relative min-vh-100 w-100">
     <div class="container">
@@ -50,51 +69,30 @@
         </header>
         <main>
             <div class="container">
-                <h3 class="mt-4 fw-bold text-center">Thêm sản phẩm</h3>
-                <div class="d-flex justify-content-center align-content-center flex-column w-100">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label fw-bold">Tên sản phẩm</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Tên sản phẩm ...">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label fw-bold">Loại sản phẩm</label>
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle w-100" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Loại
-                                </a>
-                                <ul class="dropdown-menu w-100">
-                                    <li><a class="dropdown-item" href="#">Trái cây tươi</a></li>
-                                    <li><a class="dropdown-item" href="#">Nước đóng hộp</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label fw-bold">Giá</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Giá sản phẩm ...">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label fw-bold">Nhà cung cấp</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Nhà cung cấp ...">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label fw-bold">Mô tả</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                placeholder="Mô tả ..."></textarea>
-                        </div>
-                        <div class="mb-3 d-flex justify-content-between align-items-center flex-wrap gap-3">
-                            <div>
-                                <label for="exampleInputPassword1" class="form-label fw-bold">Upload ảnh : </label>
-                                <input type="file" id="upload">
-                            </div>
-                            <button class="btn btn-warning fw-bold">Upload</button>
-                        </div>
-                        <button type="submit" class="btn btn-dark fw-bold mb-2 w-100">Thêm sản phẩm</button>
-                    </form>
+                <h3 class="mt-4 fw-bold text-center">Trạng thái đặt hàng</h3>
+                <div class="d-flex justify-content-between gap-3 m-auto border border-1 border-black p-3 mt-4 rounded-3 cart_status">
+                    <img src="img/44f920810a271a3bdd789bf275c2cad_cc8529666234418993f4d483c9f9939f_large_27566d30a81e41a39de3b1718e3db29e_large.jpg" class="img_status">
+                    <div class="d-flex justify-content-start w-100 flex-column gap-1">
+                        <p class="fw-bold mb-0">Tên sản phẩm : <span class="name_status">Bơ</span></p>
+                        <p class="fw-bold mb-0">Loại sản phẩm : <span class="productType_status">Trái cây tươi</span></p>
+                        <p class="fw-bold mb-0">Giá : <span class="price_status">23.000đ</span></p>
+                        <p class="fw-bold mb-0">Số lượng : <span class="quanlity_status">2kg</span></p>
+                        <p class="fw-bold mb-0">Tên người đặt hàng : <span class="user_status">Nguyễn Trinh Huy</span></p>
+                        <p class="fw-bold mb-0">Phone : <span class="phone_status">0335673896</span></p>
+                        <p class="fw-bold mb-0">Địa chỉ : <span class="address_status">Phương phú - Phụng hiệp - Hậu Giang</span></p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between gap-3 m-auto border border-1 border-black p-3 mt-4 rounded-3 cart_status">
+                    <img src="img/44f920810a271a3bdd789bf275c2cad_cc8529666234418993f4d483c9f9939f_large_27566d30a81e41a39de3b1718e3db29e_large.jpg" class="img_status">
+                    <div class="d-flex justify-content-start w-100 flex-column gap-1">
+                        <p class="fw-bold mb-0">Tên sản phẩm : <span class="name_status">Bơ</span></p>
+                        <p class="fw-bold mb-0">Loại sản phẩm : <span class="productType_status">Trái cây tươi</span></p>
+                        <p class="fw-bold mb-0">Giá : <span class="price_status">23.000đ</span></p>
+                        <p class="fw-bold mb-0">Số lượng : <span class="quanlity_status">2kg</span></p>
+                        <p class="fw-bold mb-0">Tên người đặt hàng : <span class="user_status">Nguyễn Trinh Huy</span></p>
+                        <p class="fw-bold mb-0">Phone : <span class="phone_status">0335673896</span></p>
+                        <p class="fw-bold mb-0">Địa chỉ : <span class="address_status">Phương phú - Phụng hiệp - Hậu Giang</span></p>
+                    </div>
                 </div>
             </div>
         </main>
