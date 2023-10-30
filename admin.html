@@ -31,7 +31,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Sản phẩm</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Thêm sản phẩm</a>
+                                <a class="nav-link" href="add_product.html">Thêm sản phẩm</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Trạng thái sản phẩm</a>
@@ -51,8 +51,43 @@
         <main>
             <div class="container">
                 <h3 class="mt-4 fw-bold text-center">Tất cả các sản phẩm</h3>
-                <div clas>
-
+                <div class="w-100 overflow-x-auto mt-5 border shadow rounded-4 p-5">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">STT</th>
+                                <th scope="col">Sản phẩm</th>
+                                <th scope="col">Loại</th>
+                                <th scope="col">Giá</th>
+                                <th scope="col">Nhà cung cấp</th>
+                                <th scope="col">Edits</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Bơ</td>
+                                <td>Trái cây tươi</td>
+                                <td>24.000đ</td>
+                                <td>FreshFruits.vn</td>
+                                <td class="d-flex justify-content-center align-items-start flex-column">
+                                    <button class="btn btn-warning fw-bold mb-2">Sửa</button>
+                                    <button class="btn btn-danger fw-bold">Xóa</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Chuối Mỹ</td>
+                                <td>Trái cây tươi</td>
+                                <td>26.000đ</td>
+                                <td>FreshFruits.vn</td>
+                                <td class="d-flex justify-content-center align-items-start flex-column">
+                                    <button class="btn btn-warning fw-bold mb-2">Sửa</button>
+                                    <button class="btn btn-danger fw-bold">Xóa</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </main>
