@@ -60,6 +60,18 @@
         border: none;
     }
 
+    .comment {
+        margin-top: 60px;
+    }
+
+    .comment input {
+        outline: none;
+    }
+
+    footer {
+        margin-top: 150px;
+    }
+
     @media screen and (max-width: 1023px){
         .cart {
             width: 100%;
@@ -183,6 +195,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="w-100 d-flex flex-column gap-2 comment">
+                    <p class="fw-bold h5">Đánh giá : </p>
+                    <input type="text" class="pb-3 border-top-0 border-start-0 border-end-0" placeholder="Đánh giá shop tại đây ...">
+                </div>
             </div>
         </main>
         <div class="position-fixed start-0 top-0 bg-secondary h-100 cart d-none">
@@ -205,7 +221,7 @@
                 </div>
             </div>
         </div>
-        <footer class="position-absolute top-100 end-0 w-100 mt-5 bg-dark">
+        <footer class="position-absolute top-100 end-0 w-100 bg-dark">
             <p class="text-center text-light p-3 mb-0">@Fresh Fruits Design</p>
         </footer>
     </div>
