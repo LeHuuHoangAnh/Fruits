@@ -31,7 +31,7 @@
 <body class="position-relative min-vh-100 w-100">
     <div class="p-4 rounded-4 background-form">
         <form>
-            <h3 class="text-center fw-bold">Login</h3>
+            <h3 class="text-center fw-bold">Login Admin</h3>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label fw-bold">Email</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email ...">
@@ -51,7 +51,7 @@
             <button type="submit" class="btn btn-dark fw-bold mb-2 w-100">Login</button>
             <div class="d-flex gap-1">
                 <p class="fw-bold">Don’t have an account yet?</p>
-                <a href="signup.php" class="text-decoration-none fw-bold text-success ">Sign Up</a>
+                <a href="signupAdmin.php" class="text-decoration-none fw-bold text-success ">Sign Up</a>
             </div>
           </form>
     </div>

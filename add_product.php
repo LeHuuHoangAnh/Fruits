@@ -53,7 +53,7 @@
         </header>
         <main>
             <div class="container">
-                <h3 class="mt-4 fw-bold text-center">Thêm sản phẩm</h3>
+                <h3 class="mt-4 fw-bold text-center">Thêm/sửa sản phẩm</h3>
                 <div class="d-flex justify-content-center align-content-center flex-column w-100">
                     <form>
                         <div class="mb-3">
