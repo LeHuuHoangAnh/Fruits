@@ -28,10 +28,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="admin.php">Sản phẩm</a>
+                                <a class="nav-link" aria-current="page" href="admin.php">Sản phẩm</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="add_product.php">Thêm sản phẩm</a>
+                                <a class="nav-link active" href="add_product.php">Thêm sản phẩm</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="status.php">Trạng thái đặt hàng</a>

@@ -12,7 +12,11 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<style></style>
+<style>
+    .img_product {
+        width: 70px;
+    }
+</style>
 
 <body class="position-relative min-vh-100 w-100">
     <div class="container">
@@ -61,6 +65,7 @@
                                 <th scope="col">STT</th>
                                 <th scope="col">Sản phẩm</th>
                                 <th scope="col">Loại</th>
+                                <th scope="col">Ảnh</th>
                                 <th scope="col">Giá</th>
                                 <th scope="col">Nhà cung cấp</th>
                                 <th scope="col">Edits</th>
@@ -71,21 +76,23 @@
                                 <th scope="row">1</th>
                                 <td>Bơ</td>
                                 <td>Trái cây tươi</td>
+                                <td><img src="img/263357c23ba80c433204bcdc0cb2d19_056f2c250f0d4ab699b11e67dc809b48_large_8039c27a72364872bcf02c14e6e399a0_large.jpg" class="img_product"></td>
                                 <td>24.000đ</td>
                                 <td>FreshFruits.vn</td>
                                 <td class="d-flex justify-content-center align-items-start flex-column">
-                                    <button class="btn btn-warning fw-bold mb-2">Sửa</button>
+                                <a href="add_product.php" class="btn btn-warning fw-bold mb-2">Sửa</a>
                                     <button class="btn btn-danger fw-bold">Xóa</button>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>Chuối Mỹ</td>
+                                <td>Chanh dây</td>
                                 <td>Trái cây tươi</td>
-                                <td>26.000đ</td>
+                                <td><img src="img/44f920810a271a3bdd789bf275c2cad_cc8529666234418993f4d483c9f9939f_large_27566d30a81e41a39de3b1718e3db29e_large.jpg" class="img_product"></td>
+                                <td>24.000đ</td>
                                 <td>FreshFruits.vn</td>
                                 <td class="d-flex justify-content-center align-items-start flex-column">
-                                    <button class="btn btn-warning fw-bold mb-2">Sửa</button>
+                                    <a href="add_product.php" class="btn btn-warning fw-bold mb-2">Sửa</a>
                                     <button class="btn btn-danger fw-bold">Xóa</button>
                                 </td>
                             </tr>
