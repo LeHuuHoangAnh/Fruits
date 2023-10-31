@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -13,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <style>
-    .classification li {
+    .classification li,  .product div img{
         transition: .4s;
         cursor: pointer;
     }
@@ -22,23 +21,14 @@
         color: gold;
     }
 
-    .product div {
-        cursor: pointer;
-    }
-
-    .product div img {
-        transition: .4s;
-        cursor: pointer;
-    }
-
     .product div:hover img {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 
     .cart {
         width: 500px;
         transition: .4s;
-        width: 500px;
+        max-width: 500px;
     }
 
     .fa-x {
@@ -61,7 +51,7 @@
     }
 
     .comment {
-        margin-top: 60px;
+        margin-top: 80px;
     }
 
     .comment input {
@@ -69,16 +59,9 @@
     }
 
     footer {
-        margin-top: 150px;
-    }
-
-    @media screen and (max-width: 1023px){
-        .cart {
-            width: 100%;
-        }
+        margin-top: 140px;
     }
 </style>
-
 <body class="position-relative min-vh-100 w-100">
     <div class="container">
         <header>
@@ -94,16 +77,6 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Loại
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Trái cây</a></li>
-                                    <li><a class="dropdown-item" href="#">Nước đóng hộp</a></li>
-                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="login.php">Đăng nhập</a>
