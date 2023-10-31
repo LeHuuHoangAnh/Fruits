@@ -58,13 +58,36 @@
         outline: none;
     }
 
+    .img_small {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    .img_big {
+        width: 300px;
+    }
+
+    .img_order {
+        width: 250px;
+    }
+
     footer {
         margin-top: 140px;
     }
 
     @media screen and (max-width: 1023px) {
-        .cart {
+        .cart ,.img_order {
             width: 100%;
+        }
+
+        .product_detail, .order {
+            flex-wrap: wrap;
+        }
+
+        .img_small {
+            width: 100px;
+            cursor: pointer;
+            display: none;
         }
     }
 </style>
