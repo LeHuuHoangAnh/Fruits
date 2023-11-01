@@ -1,38 +1,5 @@
 <?php 
     include_once "header.php";
-    
-    $conn = new mysqli('localhost', 'root', '','fruits');
-    $pdo = new PDO('mysql:host=localhost;dbname=fruits', 'root', '');
-
-    $success = '';
-    $err = '';
-    if ($_SERVER["REQUEST_METHOD"] == 'POST') {
-        if (isset($_POST['submit'])) {
-            if (!empty($_POST['name'])) {
-                //require_once __DIR__.'/../partials/db_connect.php';
-                $sql = "INSERT INTO products (name, type, price, supplier, description) VALUE(?,?,?,?,?)";
-                try {
-                    $statement = $pdo->prepare($sql);
-                    $is_successful = $statement ->execute([
-                    $_POST['name'],
-                    $_POST['type'],
-                    $_POST['price'],
-                    $_POST['supplier'],
-                    $_POST['description']
-                    ]); 
-                } catch(PDOException $e) {
-                    $err = $e->getMessage();
-                } 
-                if($is_successful && $statement->errorCode() == 0) {
-                    $success = "Bạn đã thêm sản phẩm thành công";
-                } else {
-                    $err = "Có lỗi xảy ra, Không thể thêm sản phẩm";
-                } 
-            } else {
-                $err = "Không được để trống";
-            }
-        }
-    }
 ?>
 
 <body class="position-relative min-vh-100 w-100">
@@ -74,9 +41,9 @@
         </header>
         <main>
             <div class="container">
-                <h3 class="mt-4 fw-bold text-center">Thêm sản phẩm</h3>
-                <p class="text-center text-success fw-bold"><?php echo "$success"?></p>
-                <p class="text-center text-danger fw-bold"><?php echo "$err"?></p>
+                <h3 class="mt-4 fw-bold text-center">Sửa sản phẩm</h3>
+                <!-- <p class="text-center"><?php echo "$success"?></p>
+                <p class="text-center"><?php echo "$err"?></p> -->
                 <div class="d-flex justify-content-center align-content-center flex-column w-100">
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="mb-3">
@@ -92,7 +59,7 @@
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label fw-bold">Giá</label>
                             <input type="text" name="price" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="###.###">
+                                aria-describedby="emailHelp" placeholder="Giá sản phẩm ...">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label fw-bold">Nhà cung cấp</label>
@@ -111,7 +78,7 @@
                             </div>
                             <button class="btn btn-warning fw-bold">Upload</button>
                         </div>
-                        <button type="submit" name="submit" class="btn btn-dark fw-bold mb-2 w-100">Thêm sản phẩm</button>
+                        <button type="submit" class="btn btn-dark fw-bold mb-2 w-100">Thêm sản phẩm</button>
                     </form>
                 </div>
             </div>

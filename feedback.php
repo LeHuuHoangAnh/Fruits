@@ -37,7 +37,7 @@
                                 <a class="nav-link" href="status.php">Trạng thái đặt hàng</a>
                             </li>
                             <li class="nav-item add_cart">
-                                <a class="nav-link add_cart" href="add_product.php">Sửa sản phẩm</a>
+                                <a class="nav-link add_cart" href="edit.php">Sửa sản phẩm</a>
                             </li>
                             <li class="nav-item add_cart">
                                 <a class="nav-link add_cart active" href="feedback.php">Đánh giá</a>
@@ -53,7 +53,7 @@
         </header>
         <main>
             <div class="container">
-                <h3 class="mt-4 fw-bold text-center">Đánh giá của khách hàng</h3>
+                <h3 class="mt-4 fw-bold text-center">Góp ý của khách hàng</h3>
                 <div class="w-100 border rounded-3 shadow p-3 mt-4 overflow-y-auto">
                     <div class="border-bottom border-black p-2">
                         <div class="d-flex gap-1">

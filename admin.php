@@ -41,7 +41,7 @@
                                 <a class="nav-link" href="status.php">Trạng thái đặt hàng</a>
                             </li>
                             <li class="nav-item add_cart">
-                                <a class="nav-link add_cart" href="add_product.php">Sửa sản phẩm</a>
+                                <a class="nav-link add_cart" href="edit.php">Sửa sản phẩm</a>
                             </li>
                             <li class="nav-item add_cart">
                                 <a class="nav-link add_cart" href="feedback.php">Đánh giá</a>
