@@ -10,7 +10,7 @@
         if (isset($_POST['submit'])) {
             if (!empty($_POST['name'])) {
                 //require_once __DIR__.'/../partials/db_connect.php';
-                $sql = "INSERT INTO products (name, type, price, supplier, description) VALUE(?,?,?,?,?)";
+                $sql = "INSERT INTO products (name, type, price, supplier, description,image) VALUE(?,?,?,?,?,?)";
                 try {
                     $statement = $pdo->prepare($sql);
                     $is_successful = $statement ->execute([
@@ -18,7 +18,8 @@
                     $_POST['type'],
                     $_POST['price'],
                     $_POST['supplier'],
-                    $_POST['description']
+                    $_POST['description'],
+                    $_POST['image']
                     ]); 
                 } catch(PDOException $e) {
                     $err = $e->getMessage();
@@ -107,7 +108,7 @@
                         <div class="mb-3 d-flex justify-content-between align-items-center flex-wrap gap-3">
                             <div>
                                 <label for="exampleInputPassword1" class="form-label fw-bold">Upload ảnh : </label>
-                                <input type="file" id="upload">
+                                <input type="file" name="image" id="upload">
                             </div>
                             <button class="btn btn-warning fw-bold">Upload</button>
                         </div>
