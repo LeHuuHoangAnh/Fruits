@@ -104,9 +104,9 @@
                     </div>
                 </div>
                 <div class="w-100 d-flex flex-column gap-2 comment">
-                    <p class="fw-bold h5">Đánh giá : </p>
-                    <input type="text" class="pb-3 border-top-0 border-start-0 border-end-0" placeholder="Đánh giá shop tại đây ...">
-                    <button class="btn btn-warning fw-bold mt-3">Đánh giá</button>
+                    <p class="fw-bold h5">Góp ý : </p>
+                    <input type="text" class="pb-3 border-top-0 border-start-0 border-end-0" placeholder="Góp ý shop tại đây ...">
+                    <button class="btn btn-warning fw-bold mt-3">Góp ý</button>
                 </div>
             </div>
         </main>
